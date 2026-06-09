@@ -1,0 +1,164 @@
+:root {
+    --dark-blue: #1a3a52;
+    --accent-blue: #2c5d83;
+    --light-bg: #f8f9fa;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    background-color: var(--light-bg);
+    color: #333;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Header & Footer */
+.bg-institutional {
+    background-color: var(--dark-blue) !important;
+}
+
+header {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Logo Design */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-icon {
+    background: white;
+    color: var(--dark-blue);
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+/* UI Elements */
+h1.display-title {
+    color: var(--dark-blue);
+    font-weight: 700;
+    border-bottom: 3px solid var(--dark-blue);
+    display: inline-block;
+    margin-bottom: 1.5rem;
+}
+
+.card-form {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+}
+
+.btn-institutional {
+    background-color: var(--dark-blue);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 8px;
+    transition: all 0.3s;
+}
+
+.btn-institutional:hover {
+    background-color: var(--accent-blue);
+    color: white;
+    transform: translateY(-2px);
+}
+
+/* Table Styling */
+.table-container {
+    background: white;
+    border-radius: 15px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    margin-top: 2rem;
+}
+
+.table thead {
+    background-color: #1a3a5233;
+    color: white;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: rgba(26, 58, 82, 0.03);
+}
+
+footer {
+    margin-top: auto;
+    padding: 20px 0;
+    font-weight: 600;
+}
+
+.required-mark {
+    color: #dc3545;
+    margin-left: 3px;
+}
+
+.optional-badge {
+    font-size: 0.75rem;
+    color: #6c757d;
+    font-style: italic;
+}
+
+.menu{
+    display: inline-block;
+    float: left;
+    width: 20%;
+    background-color: #1a3a52;
+    color: #fff;
+}
+
+.menu ul{
+    padding: 0;
+    margin: 0;
+}
+.menu ul li{
+    list-style-type: none;
+    border-bottom: 1px solid #fff;
+    padding: 5px 5px;
+}
+.menu ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu ul li a:hover{
+    color: #ff0;
+    font-weight: bold;
+}
+.menu ul li:hover{
+    color: #ff0;
+    font-weight: bold;
+    border-bottom: 1px solid #fff;
+}
+
+.cont{
+    display: inline-block;
+    float: left;
+    width: 80% !important;
+    padding: 30px;
+}
+
+label{
+    font-weight: bold;
+    font-size: 10px;
+}
+
+.error2{
+    display: block;
+    text-align: center;
+    width: 100%;
+    border-radius: 20px;
+    border: 1px solid #ff0000;
+    padding: 10px;
+    background-color: rgba(255, 0, 0, 0.1);
+    color: #ff0000;
+    font-weight: bold;
+    margin: 0px 0px 20px 0px; 
+    box-shadow: 1px 1px 3px #000;
+}
